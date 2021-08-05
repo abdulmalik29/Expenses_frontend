@@ -22,9 +22,11 @@ export default() => {
 const ListRow = ({ expense }) => {
     return <div>
         <Row>
-            <Col>type: {expense.type}</Col>
-            <Col>amount: {expense.amount}</Col>
-            <Button variant= "warning"> Edit </Button>
+            <Col>{expense.type}</Col>
+            <Col>{expense.amount}</Col>
+            <Col> 
+                <Button variant="warning"> Edit </Button> 
+            </Col>
         </Row>
         <hr/>
     </div>
